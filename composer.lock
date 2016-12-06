@@ -1,0 +1,66 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "0b3206a1f9902ea068fa93b453a0915a",
+    "content-hash": "1add1a2c17f525986516a9bcb3d000de",
+    "packages": [
+        {
+            "name": "gmbn/eventphp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GMBN/EventPHP.git",
+                "reference": "7552fe98e4301dd445d50ffda60b152fc6b65331"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GMBN/EventPHP/zipball/7552fe98e4301dd445d50ffda60b152fc6b65331",
+                "reference": "7552fe98e4301dd445d50ffda60b152fc6b65331",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EventPHP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gian Nunes",
+                    "email": "gianboschette@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Manipulate events with php",
+            "homepage": "https://github.com/GMBN/EventPHP",
+            "keywords": [
+                "event",
+                "eventos",
+                "jquery",
+                "nodejs",
+                "php"
+            ],
+            "time": "2016-12-06 11:30:04"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "gmbn/eventphp": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
