@@ -60,34 +60,6 @@ function handler($errno, $errstr, $errfile, $errline) {
             break;
     }
     if (!DEBUG) {
-        //envia o e-mail de erro
-        $mail = new \PHPMailer();
-        $mail->isSMTP();                                      // Set mailer to use SMTP
-        $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-        $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'sitesoscasar@gmail.com';                 // SMTP username
-        $mail->Password = 'gian080964';                           // SMTP password
-        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-        $mail->Port = 587;                                    // TCP port to connect to
-        $mail->setFrom('sitesoscasar@gmail.com', 'SOS Casar');
-
-        $mail->addAddress('gianboschette@gmail.com', 'Gian Nunes');     // Add a recipient
-
-        $mail->isHTML(true);                                  // Set email format to HTML
-
-        $mail->Subject = 'Erro '.$typestr;
-        
-        
-        $message = " Error PHP <br/>"
-                . "file => " . $errfile . " at line : " . $errline . "<br/>"
-                . "type error => " . $typestr . " : " . $errstr . "<br/> ";
-        $mail->Body = $message;
-        $mail->send();
-        ob_clean();
-        ob_start();
-        http_response_code(500);
-        require ROOT.'/500.php';
-        ob_end_flush();
-        exit();
+     
     }
 }
