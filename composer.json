@@ -1,0 +1,13 @@
+{
+    "name": "levitron",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "app/"
+        }
+    },
+    "require": {
+        "gmbn/eventphp": "dev-master",
+        "gmbn/levrender": "dev-master"
+    }
+}
